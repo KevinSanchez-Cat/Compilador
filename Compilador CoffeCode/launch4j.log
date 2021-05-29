@@ -1,0 +1,30 @@
+
+
+Version:	3.14
+CmdLine:	C:\Users\Colossus\Desktop\NetBeansProjects\Compilador_CoffeCode\Compilador CoffeCode\compilador.exe --l4j-debug
+WOW64:		yes
+Working dir:	C:\Users\Colossus\Desktop\NetBeansProjects\Compilador_CoffeCode\Compilador CoffeCode\.
+Java min ver:	1.008.000_291
+Java max ver:	
+Bundled JRE(s):	JRE\jre1.8.0_291
+Check launcher:	C:\Users\Colossus\Desktop\NetBeansProjects\Compilador_CoffeCode\Compilador CoffeCode\JRE\jre1.8.0_291\bin\javaw.exe (not found)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_291
+Check launcher:	C:\Program Files\Java\jre1.8.0_291\bin\javaw.exe (OK)
+Match:		1.008.000_291
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_111
+Ignore:		1.008.000_111
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_271
+Ignore:		1.008.000_271
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Runtime used:	1.008.000_291 (64-bit)
+Launcher:	C:\Program Files\Java\jre1.8.0_291\bin\javaw.exe
+Launcher args:	-jar "C:\Users\Colossus\Desktop\NetBeansProjects\Compilador_CoffeCode\Compilador CoffeCode\compilador.exe"
+Args length:	106/32768 chars
+Exit code:	0
