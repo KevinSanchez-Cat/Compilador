@@ -7,6 +7,7 @@ package interfaces;
 
 import analisis.Main;
 import java.awt.Color;
+import java.awt.Cursor;
 import java.awt.Image;
 import java.awt.Toolkit;
 import java.io.File;
@@ -102,8 +103,8 @@ public class VtnCompilador extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 51, 102));
-        jLabel1.setText("Compilador CS-DOS");
-        panelNavegacion.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 270, 37));
+        jLabel1.setText("Compilador");
+        panelNavegacion.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 180, 37));
 
         lblImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/proyecto (3).png"))); // NOI18N
         panelNavegacion.add(lblImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, 70, 80));
@@ -119,6 +120,11 @@ public class VtnCompilador extends javax.swing.JFrame {
         btnDocumentacion.setIconTextGap(15);
         btnDocumentacion.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icon-50-notebook (3).png"))); // NOI18N
         btnDocumentacion.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icon-50-notebook.png"))); // NOI18N
+        btnDocumentacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDocumentacionActionPerformed(evt);
+            }
+        });
         panelNavegacion.add(btnDocumentacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 630, 290, -1));
 
         btnNuevo.setBackground(new java.awt.Color(162, 217, 245));
@@ -558,6 +564,14 @@ public class VtnCompilador extends javax.swing.JFrame {
 
     }//GEN-LAST:event_tabEdicionStateChanged
 
+    private void btnDocumentacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDocumentacionActionPerformed
+        // TODO add your handling code here:
+        setCursor(new Cursor(Cursor.WAIT_CURSOR));
+        new VtnDocumentacion().setVisible(true);
+        setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+
+    }//GEN-LAST:event_btnDocumentacionActionPerformed
+
     public void abrirVentanaAbrir() {
         JFileChooser selecciona = new JFileChooser();  //crea objeto file chooser
         selecciona.setFileSelectionMode(javax.swing.JFileChooser.FILES_AND_DIRECTORIES);
@@ -633,7 +647,7 @@ public class VtnCompilador extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
-             TextPaneTest.appendToPane((JTextPane) editorPaneSalida, "Ups! Ha ocurrido un error "+ ex.toString(), Color.red);
+            TextPaneTest.appendToPane((JTextPane) editorPaneSalida, "Ups! Ha ocurrido un error " + ex.toString(), Color.red);
         }
         //</editor-fold>
         //</editor-fold>

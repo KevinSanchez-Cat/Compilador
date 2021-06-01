@@ -65,7 +65,7 @@ public class VtnResultadoCmp extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 51, 102));
-        jLabel2.setText("Compilador CS-DOS");
+        jLabel2.setText("Compilador");
 
         btnOptimizacion.setBackground(new java.awt.Color(0, 51, 102));
         buttonGroup1.add(btnOptimizacion);

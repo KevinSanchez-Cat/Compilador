@@ -95,7 +95,7 @@ public class PnlAnalisis extends javax.swing.JPanel {
         jLabel3.setForeground(new java.awt.Color(0, 51, 102));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Ánalisis léxico");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 12, 676, 34));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 590, 34));
 
         jLabel4.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 51, 102));

@@ -8,6 +8,7 @@ package interfaces;
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -17,8 +18,11 @@ public class VtnAcercaDe extends javax.swing.JDialog {
 
     /**
      * Creates new form AcercaDe
+     *
      * @param parent designa a quien esta heredando la ventana
-     * @param modal es un booleano que dice que si se mueve el cursor a otra parte este tendra que cerrarse esta ventana para que se pueda ver otra parte
+     * @param modal es un booleano que dice que si se mueve el cursor a otra
+     * parte este tendra que cerrarse esta ventana para que se pueda ver otra
+     * parte
      */
     public VtnAcercaDe(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -28,6 +32,10 @@ public class VtnAcercaDe extends javax.swing.JDialog {
         this.setIconImage(icono);
         setLocationRelativeTo(this);
         setResizable(false);
+        ImageIcon imagenC = new ImageIcon(ClassLoader.getSystemResource("imagenes/Logo_1.png"));
+        ImageIcon imagent = new ImageIcon(ClassLoader.getSystemResource("imagenes/tecnologico.png"));
+        jLabel6.setIcon(new ImageIcon(imagent.getImage().getScaledInstance(jLabel6.getWidth(), jLabel6.getHeight(), Image.SCALE_SMOOTH)));
+        lblImg.setIcon(new ImageIcon(imagenC.getImage().getScaledInstance(lblImg.getWidth(), lblImg.getHeight(), Image.SCALE_SMOOTH)));
     }
 
     /**
@@ -40,11 +48,19 @@ public class VtnAcercaDe extends javax.swing.JDialog {
     private void initComponents() {
 
         panelNavegacion = new javax.swing.JPanel();
-        lblImg = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        rSButton9 = new rojeru_san.RSButton();
+        jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        lblImg = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        rSButton9 = new rojeru_san.RSButton();
+        jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -52,13 +68,25 @@ public class VtnAcercaDe extends javax.swing.JDialog {
         panelNavegacion.setPreferredSize(new java.awt.Dimension(1436, 900));
         panelNavegacion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/proyecto (3).png"))); // NOI18N
-        panelNavegacion.add(lblImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 0, 83, 102));
-
         jLabel2.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 51, 102));
-        jLabel2.setText("Compilador CS-DOS");
-        panelNavegacion.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 0, 390, 91));
+        jLabel2.setText("Compilador");
+        panelNavegacion.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, 220, 70));
+        panelNavegacion.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 100, 90));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/proyecto (3).png"))); // NOI18N
+        panelNavegacion.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 80, 80));
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/coffe.png"))); // NOI18N
+        jPanel1.add(lblImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 380, 200));
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel5.setText("Asesora:");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 190, 230, 37));
 
         rSButton9.setBackground(new java.awt.Color(0, 51, 102));
         rSButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icons8_Vote_24px_1.png"))); // NOI18N
@@ -71,34 +99,58 @@ public class VtnAcercaDe extends javax.swing.JDialog {
                 rSButton9ActionPerformed(evt);
             }
         });
-        panelNavegacion.add(rSButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 260, 131, -1));
+        jPanel1.add(rSButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 400, 131, 40));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
-        jLabel1.setText("Siles Robles Alondra Veronica");
-        panelNavegacion.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(79, 120, 370, 37));
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel4.setText("Solis Robles Alondra Veronica");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 350, 300, 37));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 102, 153));
         jLabel3.setText("Sanchez Valdin Kevin Ivan");
-        panelNavegacion.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(79, 163, 390, 37));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 310, 320, 37));
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel7.setText("Autores:");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 260, 290, 37));
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel8.setText("Intituto Tecnologico de Toluca");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 10, 290, 37));
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel9.setText("Lenguajes y automatas");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 80, 230, 37));
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel10.setText("Profesora:");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 140, 230, 37));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelNavegacion, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(panelNavegacion, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 858, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelNavegacion, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(panelNavegacion, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void rSButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButton9ActionPerformed
-       this.dispose();
+        this.dispose();
     }//GEN-LAST:event_rSButton9ActionPerformed
 
     /**
@@ -148,11 +200,18 @@ public class VtnAcercaDe extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblImg;
     private javax.swing.JPanel panelNavegacion;
     private rojeru_san.RSButton rSButton9;
     // End of variables declaration//GEN-END:variables
 }
-
