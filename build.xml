@@ -70,7 +70,7 @@
     nbproject/build-impl.xml file. 
 
     -->
-    
+    <!--
 <target name="-post-jar">
     <property name="store.jar.name" value="CompiladorCoffeCode"/>
  
@@ -97,5 +97,5 @@
     <delete dir="${store.dir}/lib"/>
     <delete file="${store.dir}/README.TXT"/>
 </target>
-
+-->
 </project>

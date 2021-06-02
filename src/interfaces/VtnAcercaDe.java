@@ -49,10 +49,9 @@ public class VtnAcercaDe extends javax.swing.JDialog {
 
         panelNavegacion = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
         lblImg = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         rSButton9 = new rojeru_san.RSButton();
         jLabel4 = new javax.swing.JLabel();
@@ -61,6 +60,8 @@ public class VtnAcercaDe extends javax.swing.JDialog {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -70,23 +71,22 @@ public class VtnAcercaDe extends javax.swing.JDialog {
 
         jLabel2.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 51, 102));
-        jLabel2.setText("Compilador");
-        panelNavegacion.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, 220, 70));
-        panelNavegacion.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 100, 90));
+        jLabel2.setText("Créditos");
+        panelNavegacion.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, 220, 90));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/proyecto (3).png"))); // NOI18N
-        panelNavegacion.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 80, 80));
+        panelNavegacion.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 90, 80));
+
+        lblImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/coffe.png"))); // NOI18N
+        panelNavegacion.add(lblImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 10, 190, 70));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/coffe.png"))); // NOI18N
-        jPanel1.add(lblImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 380, 200));
-
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 102, 153));
-        jLabel5.setText("Asesora:");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 190, 230, 37));
+        jLabel5.setText("Martha Martinez Moreno");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, 230, 37));
 
         rSButton9.setBackground(new java.awt.Color(0, 51, 102));
         rSButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icons8_Vote_24px_1.png"))); // NOI18N
@@ -99,51 +99,57 @@ public class VtnAcercaDe extends javax.swing.JDialog {
                 rSButton9ActionPerformed(evt);
             }
         });
-        jPanel1.add(rSButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 400, 131, 40));
+        jPanel1.add(rSButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 400, 131, 40));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 102, 153));
         jLabel4.setText("Solis Robles Alondra Veronica");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 350, 300, 37));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 340, 300, 37));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 102, 153));
         jLabel3.setText("Sanchez Valdin Kevin Ivan");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 310, 320, 37));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 300, 320, 37));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel7.setForeground(new java.awt.Color(0, 51, 102));
         jLabel7.setText("Autores:");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 260, 290, 37));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 270, 290, 37));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel8.setForeground(new java.awt.Color(0, 51, 102));
         jLabel8.setText("Intituto Tecnologico de Toluca");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 10, 290, 37));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 290, 37));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 102, 153));
-        jLabel9.setText("Lenguajes y automatas");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 80, 230, 37));
+        jLabel9.setForeground(new java.awt.Color(0, 51, 102));
+        jLabel9.setText("Materia:");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, 230, 37));
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 102, 153));
-        jLabel10.setText("Profesora:");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 140, 230, 37));
+        jLabel10.setForeground(new java.awt.Color(0, 51, 102));
+        jLabel10.setText("Asesor:");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 230, 37));
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel11.setText("Lenguajes y automatas");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 230, 37));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 10, 80, 70));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(panelNavegacion, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 858, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 623, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(panelNavegacion, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panelNavegacion, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 462, Short.MAX_VALUE))
         );
 
         pack();
@@ -201,6 +207,7 @@ public class VtnAcercaDe extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
